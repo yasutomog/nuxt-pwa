@@ -1,5 +1,11 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/nuxt-pwa/'
+  }
+} : {}
+
 module.exports = {
-  
+  ...routerBase,
   modules: [
     '@nuxtjs/pwa'
   ],
