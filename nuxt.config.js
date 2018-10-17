@@ -12,7 +12,20 @@ module.exports = {
   ],
   manifest: {
     name: 'yasutomog nuxt pwa',
-    lang: 'ja'
+    lang: 'ja',
+    "short_name": "ynp",
+    "icons": [
+      {
+        "src": "android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
   },
   /*
   ** Headers of the page
